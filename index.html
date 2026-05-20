@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAGHAV — Creative Designer &amp; Visual Storyteller</title>
+  <meta name="description" content="Creative Designer specializing in Brand Identity, Event Posters, Packaging Design, and Digital Campaigns. Based in India.">
+  <meta property="og:title" content="RAGHAV — Creative Designer">
+  <meta property="og:description" content="Brand Identity · Event Posters · Packaging · UI/UX · Digital Campaigns">
+  <meta property="og:image" content="lakhwinder wadali canada tour 2.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- GRAIN -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader">
+  <div class="loader__name"><span id="ldrName">Raghav Bhatia</span></div>
+  <div class="loader__sub"><span id="ldrSub">Portfolio</span></div>
+  <div class="loader__bar" id="ldrBar"></div>
+  <div class="loader__pct" id="ldrPct">0%</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing">
+  <span class="cur-ring__label" id="curLabel">VIEW</span>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">RAGHAV<em>.</em></a>
+    <div class="nav__links">
+      <a href="#featured"  class="nav__lnk">Work</a>
+      <a href="#expertise" class="nav__lnk">Skills</a>
+      <a href="#about"     class="nav__lnk">About</a>
+      <a href="#contact"   class="nav__lnk">Contact</a>
+      <a href="https://www.behance.net/raghavbhatia3" target="_blank" rel="noopener" class="nav__cta mag-btn">Behance ↗</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU — outside nav to avoid backdrop-filter containing block bug -->
+<div class="nav__mob" id="mobMenu">
+  <a href="#featured"  class="nav__mob-lnk" data-close>Work</a>
+  <a href="#expertise" class="nav__mob-lnk" data-close>Skills</a>
+  <a href="#about"     class="nav__mob-lnk" data-close>About</a>
+  <a href="#contact"   class="nav__mob-lnk" data-close>Contact</a>
+  <a href="https://www.behance.net/raghavbhatia3" target="_blank" rel="noopener" class="nav__mob-lnk">Behance ↗</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__bg-word" aria-hidden="true">DESIGN</div>
+
+  <div class="hero__wrap">
+    <div class="hero__text">
+      <div class="hero__eyebrow" id="heroEyebrow">
+        <span class="hero__avail-dot"></span>
+        <span>Available for Projects</span>
+        <span class="hero__dot">·</span>
+        <span>India</span>
+      </div>
+
+      <h1 class="hero__h1">
+        <span class="hl hl--ghost" id="hl1">CRAFTING</span>
+        <span class="hl hl--fill"  id="hl2">VISUALS</span>
+        <span class="hl hl--sub"   id="hl3">that leave&nbsp;a mark.</span>
+      </h1>
+
+      <p class="hero__desc" id="heroDesc">Brand identities, event posters, packaging &amp; UI — work that commands attention and builds brands people remember.</p>
+
+      <div class="hero__actions" id="heroActions">
+        <a href="#work" class="hero__btn mag-btn">View Work <span>↓</span></a>
+        <a href="https://www.behance.net/raghavbhatia3" target="_blank" rel="noopener" class="hero__btn hero__btn--o mag-btn">Behance <span>↗</span></a>
+      </div>
+
+      <div class="hero__stats" id="heroStats">
+        <div class="h-stat">
+          <span class="h-stat__n cnt" data-to="50">0</span><span class="h-stat__plus">+</span>
+          <span class="h-stat__l">Projects</span>
+        </div>
+        <div class="h-div"></div>
+        <div class="h-stat">
+          <span class="h-stat__n cnt" data-to="30">0</span><span class="h-stat__plus">+</span>
+          <span class="h-stat__l">Clients</span>
+        </div>
+        <div class="h-div"></div>
+        <div class="h-stat">
+          <span class="h-stat__n cnt" data-to="5">0</span><span class="h-stat__plus">+</span>
+          <span class="h-stat__l">Years</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIGITAL AVATAR -->
+    <div class="hero__avatar" id="heroCards">
+      <div class="av__glow"></div>
+      <div class="av__ring av__ring--1"></div>
+      <div class="av__ring av__ring--2"></div>
+      <div class="av__core">
+        <svg class="av__svg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="avBg" cx="50%" cy="40%" r="65%">
+              <stop offset="0%" stop-color="#1f1b12"/><stop offset="100%" stop-color="#09080700"/>
+            </radialGradient>
+            <linearGradient id="avSkin" x1="20%" y1="0%" x2="80%" y2="100%">
+              <stop offset="0%" stop-color="#fde8c0"/><stop offset="55%" stop-color="#f0c07a"/><stop offset="100%" stop-color="#cc8840"/>
+            </linearGradient>
+            <linearGradient id="avShirt" x1="0%" y1="0%" x2="60%" y2="100%">
+              <stop offset="0%" stop-color="#1c1c1c"/><stop offset="100%" stop-color="#0e0e0e"/>
+            </linearGradient>
+            <radialGradient id="avGlow" cx="50%" cy="40%" r="55%">
+              <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.18"/><stop offset="100%" stop-color="#c8a96e" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="avCircle"><circle cx="150" cy="150" r="138"/></clipPath>
+          </defs>
+          <!-- BG -->
+          <circle cx="150" cy="150" r="138" fill="#0f0d09"/>
+          <circle cx="150" cy="150" r="138" fill="url(#avBg)"/>
+          <!-- Grid -->
+          <g clip-path="url(#avCircle)" stroke="#c8a96e" stroke-opacity="0.05" stroke-width="0.8">
+            <line x1="0" y1="75" x2="300" y2="75"/><line x1="0" y1="112" x2="300" y2="112"/>
+            <line x1="0" y1="150" x2="300" y2="150"/><line x1="0" y1="188" x2="300" y2="188"/>
+            <line x1="0" y1="225" x2="300" y2="225"/><line x1="75" y1="0" x2="75" y2="300"/>
+            <line x1="112" y1="0" x2="112" y2="300"/><line x1="150" y1="0" x2="150" y2="300"/>
+            <line x1="188" y1="0" x2="188" y2="300"/><line x1="225" y1="0" x2="225" y2="300"/>
+          </g>
+          <!-- Shoulders -->
+          <path d="M 0 300 L 0 248 Q 50 215 110 210 Q 150 204 190 210 Q 250 215 300 248 L 300 300 Z" fill="url(#avShirt)" clip-path="url(#avCircle)"/>
+          <!-- Collar detail -->
+          <path d="M 130 200 L 150 220 L 170 200" fill="none" stroke="#c8a96e" stroke-width="1" stroke-opacity="0.3" clip-path="url(#avCircle)"/>
+          <!-- Neck -->
+          <rect x="135" y="170" width="30" height="38" rx="10" fill="#1a1208" clip-path="url(#avCircle)"/>
+          <!-- Head -->
+          <ellipse cx="150" cy="128" rx="56" ry="66" fill="url(#avSkin)"/>
+          <ellipse cx="150" cy="128" rx="56" ry="66" fill="url(#avGlow)"/>
+          <!-- Hair -->
+          <path d="M 94 110 Q 88 80 100 62 Q 118 42 150 48 Q 182 42 200 62 Q 212 80 206 110 Q 200 80 150 74 Q 100 80 94 110 Z" fill="#14090302"/>
+          <ellipse cx="150" cy="72" rx="54" ry="30" fill="#160c04"/>
+          <path d="M 96 115 Q 88 80 100 60 Q 120 42 150 48 Q 180 42 200 60 Q 212 80 204 115" fill="#1a0e06"/>
+          <!-- Side hair -->
+          <ellipse cx="97" cy="115" rx="10" ry="22" fill="#1a0e06" clip-path="url(#avCircle)"/>
+          <ellipse cx="203" cy="115" rx="10" ry="22" fill="#1a0e06" clip-path="url(#avCircle)"/>
+          <!-- Ears -->
+          <ellipse cx="94" cy="130" rx="9" ry="14" fill="#f5d090"/>
+          <ellipse cx="94" cy="130" rx="5" ry="8" fill="#e0b060"/>
+          <ellipse cx="206" cy="130" rx="9" ry="14" fill="#f5d090"/>
+          <ellipse cx="206" cy="130" rx="5" ry="8" fill="#e0b060"/>
+          <!-- Eyebrows -->
+          <path d="M 116 106 Q 128 101 141 105" stroke="#2e1a08" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <path d="M 159 105 Q 172 101 184 106" stroke="#2e1a08" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <!-- Eyes -->
+          <ellipse cx="128" cy="119" rx="13" ry="10" fill="#160e06"/>
+          <ellipse cx="172" cy="119" rx="13" ry="10" fill="#160e06"/>
+          <circle cx="128" cy="119" r="7" fill="#3a2010"/>
+          <circle cx="172" cy="119" r="7" fill="#3a2010"/>
+          <circle cx="128" cy="119" r="4" fill="#080502"/>
+          <circle cx="172" cy="119" r="4" fill="#080502"/>
+          <circle cx="130" cy="116" r="2" fill="white" fill-opacity="0.75"/>
+          <circle cx="174" cy="116" r="2" fill="white" fill-opacity="0.75"/>
+          <!-- Nose -->
+          <path d="M 146 127 L 141 144 Q 147 149 150 149 Q 153 149 159 144 L 154 127" fill="#daa050" fill-opacity="0.28"/>
+          <ellipse cx="143" cy="145" rx="5" ry="4" fill="#cc9040" fill-opacity="0.3"/>
+          <ellipse cx="157" cy="145" rx="5" ry="4" fill="#cc9040" fill-opacity="0.3"/>
+          <!-- Lips -->
+          <path d="M 133 158 Q 141 154 148 157 Q 150 158 152 157 Q 159 154 167 158 Q 157 155 150 156 Q 143 155 133 158 Z" fill="#6a3018"/>
+          <path d="M 133 158 Q 141 165 150 163 Q 159 165 167 158 Q 157 162 150 161 Q 143 162 133 158 Z" fill="#7a3820"/>
+          <!-- Cheek blush -->
+          <ellipse cx="113" cy="138" rx="16" ry="10" fill="#d07060" fill-opacity="0.1"/>
+          <ellipse cx="187" cy="138" rx="16" ry="10" fill="#d07060" fill-opacity="0.1"/>
+          <!-- Scan line -->
+          <rect x="12" y="0" width="276" height="2" fill="#c8a96e" fill-opacity="0" clip-path="url(#avCircle)">
+            <animate attributeName="y" values="20;275;20" dur="6s" repeatCount="indefinite" calcMode="linear"/>
+            <animate attributeName="fill-opacity" values="0;0.18;0" dur="6s" repeatCount="indefinite"/>
+          </rect>
+          <!-- HUD corners -->
+          <path d="M 18 18 L 18 46 M 18 18 L 46 18" stroke="#c8a96e" stroke-width="2" stroke-opacity="0.45" stroke-linecap="square"/>
+          <path d="M 282 18 L 282 46 M 282 18 L 254 18" stroke="#c8a96e" stroke-width="2" stroke-opacity="0.45" stroke-linecap="square"/>
+          <path d="M 18 282 L 18 254 M 18 282 L 46 282" stroke="#c8a96e" stroke-width="2" stroke-opacity="0.45" stroke-linecap="square"/>
+          <path d="M 282 282 L 282 254 M 282 282 L 254 282" stroke="#c8a96e" stroke-width="2" stroke-opacity="0.45" stroke-linecap="square"/>
+          <!-- HUD text -->
+          <text x="20" y="286" fill="#c8a96e" fill-opacity="0.38" font-size="7.5" font-family="monospace" letter-spacing="1">GRAPHIC DESIGNER</text>
+          <text x="220" y="286" fill="#c8a96e" fill-opacity="0.35" font-size="7.5" font-family="monospace">ID: RB</text>
+          <text x="150" y="24" fill="#c8a96e" fill-opacity="0.38" font-size="7.5" font-family="monospace" text-anchor="middle" letter-spacing="2">● RAGHAV BHATIA ●</text>
+        </svg>
+      </div>
+      <!-- Floating badges -->
+      <div class="av__badge av__badge--1"><span>50+</span><small>Projects</small></div>
+      <div class="av__badge av__badge--2"><span>5+</span><small>Years</small></div>
+      <!-- Floating dots -->
+      <div class="av__dot av__dot--1"></div>
+      <div class="av__dot av__dot--2"></div>
+      <div class="av__dot av__dot--3"></div>
+      <!-- Hex decorations -->
+      <div class="av__hex av__hex--1">⬡</div>
+      <div class="av__hex av__hex--2">⬡</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     TICKER
+════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Brand Identity</span><span class="ticker__sep">✦</span>
+    <span>Event Posters</span><span class="ticker__sep">✦</span>
+    <span>Packaging Design</span><span class="ticker__sep">✦</span>
+    <span>UI/UX Design</span><span class="ticker__sep">✦</span>
+    <span>Social Media</span><span class="ticker__sep">✦</span>
+    <span>Print &amp; Editorial</span><span class="ticker__sep">✦</span>
+    <span>Creative Direction</span><span class="ticker__sep">✦</span>
+    <span>Brand Identity</span><span class="ticker__sep">✦</span>
+    <span>Event Posters</span><span class="ticker__sep">✦</span>
+    <span>Packaging Design</span><span class="ticker__sep">✦</span>
+    <span>UI/UX Design</span><span class="ticker__sep">✦</span>
+    <span>Social Media</span><span class="ticker__sep">✦</span>
+    <span>Print &amp; Editorial</span><span class="ticker__sep">✦</span>
+    <span>Creative Direction</span><span class="ticker__sep">✦</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     IMAGE MARQUEE STRIP
+════════════════════════════════════════════════════════ -->
+<div class="img-strip" aria-hidden="true">
+  <div class="img-strip__track">
+    <div class="is-item"><img src="DJ NIGHT.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="lakhwinder wadali canada tour 2.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="premium chocolate box.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="INDICOLA.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="govardhan puja.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="mockup.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="design 8.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="Navratri Offer.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="CANADA PR NURSES strok.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="Karwachauth Special Packages.jpg" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="design 6.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="TORONTO 1ST COFFEE PARTY.webp" alt="" loading="lazy"></div>
+    <!-- Duplicate for seamless loop -->
+    <div class="is-item"><img src="DJ NIGHT.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="lakhwinder wadali canada tour 2.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="premium chocolate box.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="INDICOLA.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="govardhan puja.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="mockup.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="design 8.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="Navratri Offer.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="CANADA PR NURSES strok.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="Karwachauth Special Packages.jpg" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="design 6.webp" alt="" loading="lazy"></div>
+    <div class="is-item"><img src="TORONTO 1ST COFFEE PARTY.webp" alt="" loading="lazy"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     FEATURED WORKS
+════════════════════════════════════════════════════════ -->
+<section class="feat" id="featured">
+  <div class="feat__head rv">
+    <div>
+      <div class="sec-label">Selected Work</div>
+      <h2 class="sec-title">Featured<br>Projects</h2>
+    </div>
+    <a href="#work" class="feat__all rv d2">View All Work →</a>
+  </div>
+
+  <div class="feat__grid">
+
+    <!-- 01 — DJ Night Event -->
+    <div class="fi fi--tall rv"
+         role="button" tabindex="0"
+         data-img="DJ NIGHT.webp"
+         data-title="DJ Night"
+         data-sub="Event Poster · Night Series">
+      <img class="fi__img" src="DJ NIGHT.webp" alt="DJ Night Event Poster" loading="lazy" decoding="async">
+      <div class="fi__veil">
+        <div>
+          <div class="fi__num">01</div>
+          <h3 class="fi__title">DJ Night</h3>
+          <p class="fi__sub">Events · Poster Design</p>
+        </div>
+        <div class="fi__cta">View Project ↗</div>
+      </div>
+    </div>
+
+    <!-- 02 — Lakhwinder Wadali -->
+    <div class="fi rv d2"
+         role="button" tabindex="0"
+         data-img="lakhwinder wadali canada tour 2.webp"
+         data-title="Lakhwinder Wadali"
+         data-sub="Canada Tour 2025 · Concert Poster">
+      <img class="fi__img" src="lakhwinder wadali canada tour 2.webp" alt="Lakhwinder Wadali Canada Tour" loading="lazy" decoding="async">
+      <div class="fi__veil">
+        <div>
+          <div class="fi__num">02</div>
+          <h3 class="fi__title">Lakhwinder Wadali</h3>
+          <p class="fi__sub">Canada Tour 2025 · Event Poster</p>
+        </div>
+        <div class="fi__cta">View Project ↗</div>
+      </div>
+    </div>
+
+    <!-- 03 — Sunday Symphony -->
+    <div class="fi rv d3"
+         role="button" tabindex="0"
+         data-img="WhatsApp Image 2026-05-16 at 12.37.07 PM.webp"
+         data-title="Sunday Symphony"
+         data-sub="Firangi Garden · Event Poster">
+      <img class="fi__img" src="WhatsApp Image 2026-05-16 at 12.37.07 PM.webp" alt="Sunday Symphony Event Poster" loading="lazy" decoding="async">
+      <div class="fi__veil">
+        <div>
+          <div class="fi__num">03</div>
+          <h3 class="fi__title">Sunday Symphony</h3>
+          <p class="fi__sub">Firangi Garden · Event Poster</p>
+        </div>
+        <div class="fi__cta">View Project ↗</div>
+      </div>
+    </div>
+
+    <!-- 04 — IndiCola (full width) -->
+    <div class="fi fi--wide rv d1"
+         role="button" tabindex="0"
+         data-img="INDICOLA.webp"
+         data-title="IndiCola"
+         data-sub="Beverage Brand Campaign · Brand Identity">
+      <img class="fi__img" src="INDICOLA.webp" alt="IndiCola Beverage Campaign" loading="lazy" decoding="async">
+      <div class="fi__veil">
+        <div>
+          <div class="fi__num">04</div>
+          <h3 class="fi__title">IndiCola</h3>
+          <p class="fi__sub">Beverage Brand Campaign · Branding</p>
+        </div>
+        <div class="fi__cta">View Project ↗</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     HORIZONTAL SCROLL SHOWCASE
+════════════════════════════════════════════════════════ -->
+<section class="hscroll" id="showcase">
+  <div class="hscroll__sticky">
+    <div class="hscroll__header">
+      <div class="sec-label">Creative Direction</div>
+      <div class="hscroll__hint">Drag to explore →</div>
+      <div class="hscroll__pbar"><div class="hscroll__pbar-fill" id="hscrollBar"></div></div>
+    </div>
+    <div class="hscroll__viewport" id="hscrollViewport">
+      <div class="hscroll__track" id="hscrollTrack">
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="design 6.webp" alt="Hustle Over Hope" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">01</div>
+            <h3 class="hs-panel__title">Hustle Over Hope</h3>
+            <p class="hs-panel__sub">Apparel Graphic · Warrior Series</p>
+            <span class="hs-panel__tag">Creative</span>
+          </div>
+        </div>
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="DJ PARTY STORY.webp" alt="DJ Party Event" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">02</div>
+            <h3 class="hs-panel__title">DJ Party</h3>
+            <p class="hs-panel__sub">Event Poster · Night Series</p>
+            <span class="hs-panel__tag">Creative</span>
+          </div>
+        </div>
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="design 8.webp" alt="SURVIVOR" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">03</div>
+            <h3 class="hs-panel__title">SURVIVOR</h3>
+            <p class="hs-panel__sub">Editorial Typography Design</p>
+            <span class="hs-panel__tag">Creative</span>
+          </div>
+        </div>
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="premium chocolate box.webp" alt="Vriiyogoo Chocolates" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">04</div>
+            <h3 class="hs-panel__title">Vriiyogoo</h3>
+            <p class="hs-panel__sub">Premium Chocolate Campaign</p>
+            <span class="hs-panel__tag">Packaging</span>
+          </div>
+        </div>
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="Karwachauth Special Packages.jpg" alt="Karwachauth Special" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">05</div>
+            <h3 class="hs-panel__title">Karwachauth Special</h3>
+            <p class="hs-panel__sub">Festival Packaging Campaign</p>
+            <span class="hs-panel__tag">Packaging</span>
+          </div>
+        </div>
+
+        <div class="hs-panel">
+          <div class="hs-panel__img">
+            <img src="lakhwinder wadali canada tour 3.webp" alt="Lakhwinder Wadali Tour Variant" loading="lazy">
+          </div>
+          <div class="hs-panel__info">
+            <div class="hs-panel__num">06</div>
+            <h3 class="hs-panel__title">Wadali Tour Series</h3>
+            <p class="hs-panel__sub">Concert Poster · Variant</p>
+            <span class="hs-panel__tag">Events</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     WORK GALLERY
+════════════════════════════════════════════════════════ -->
+<section class="work" id="work">
+  <div class="work__head rv">
+    <div class="sec-label">All Work</div>
+    <h2 class="sec-title">Portfolio<br>Gallery</h2>
+  </div>
+  <div class="gal" id="gal"></div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SKILLS & EXPERTISE
+════════════════════════════════════════════════════════ -->
+<section class="expertise" id="expertise">
+
+  <!-- Section header -->
+  <div class="exp__head rv">
+    <div class="sec-label">Capabilities</div>
+    <div class="exp__head-row">
+      <h2 class="exp__title">Skills &amp;<br>Expertise.</h2>
+      <p class="exp__desc rv d2">A modern creative toolkit built for bold,<br>premium visual work — across every medium.</p>
+    </div>
+    <div class="exp__bg-word" aria-hidden="true">SKILLS</div>
+  </div>
+
+  <!-- ── SOFTWARE TOOLS ── -->
+  <div class="sw-block rv d1">
+    <div class="sw-block__label">Softwares I Work With</div>
+
+    <div class="sw-group">
+      <div class="sw-group__cat">Design &amp; Creative</div>
+      <div class="sw-rows">
+        <div class="sw-row">
+          <span class="sw-row__num">01</span>
+          <span class="sw-row__abbr" aria-hidden="true">PS</span>
+          <span class="sw-row__name">Adobe Photoshop</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+        <div class="sw-row">
+          <span class="sw-row__num">02</span>
+          <span class="sw-row__abbr" aria-hidden="true">AI</span>
+          <span class="sw-row__name">Adobe Illustrator</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+        <div class="sw-row">
+          <span class="sw-row__num">03</span>
+          <span class="sw-row__abbr" aria-hidden="true">CD</span>
+          <span class="sw-row__name">CorelDRAW</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+        <div class="sw-row">
+          <span class="sw-row__num">04</span>
+          <span class="sw-row__abbr" aria-hidden="true">CV</span>
+          <span class="sw-row__name">Canva Pro</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+        <div class="sw-row">
+          <span class="sw-row__num">05</span>
+          <span class="sw-row__abbr" aria-hidden="true">FG</span>
+          <span class="sw-row__name">Figma</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sw-group">
+      <div class="sw-group__cat">Video &amp; Motion</div>
+      <div class="sw-rows">
+        <div class="sw-row">
+          <span class="sw-row__num">06</span>
+          <span class="sw-row__abbr" aria-hidden="true">PR</span>
+          <span class="sw-row__name">Adobe Premiere Pro</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+        <div class="sw-row">
+          <span class="sw-row__num">07</span>
+          <span class="sw-row__abbr" aria-hidden="true">AE</span>
+          <span class="sw-row__name">Adobe After Effects</span>
+          <span class="sw-row__bar"><span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CAPABILITIES BENTO GRID ── -->
+  <div class="cap-grid rv d2">
+
+    <div class="cap-cell cap-cell--graphic">
+      <div class="cap-cell__inner">
+        <div class="cap-cell__top">
+          <span class="cap-num">01</span>
+          <span class="cap-count">9 Skills</span>
+        </div>
+        <h3 class="cap-title">Graphic<br>Design</h3>
+        <div class="cap-tags">
+          <span>Social Media Design</span>
+          <span>Marketing Creatives</span>
+          <span>Posters</span>
+          <span>Ad Creatives</span>
+          <span>Brand Visuals</span>
+          <span>Promotional Graphics</span>
+          <span>Campaign Design</span>
+          <span>Creative Direction</span>
+          <span>Visual Storytelling</span>
+        </div>
+      </div>
+      <div class="cap-cell__accent" aria-hidden="true">GD</div>
+    </div>
+
+    <div class="cap-cell cap-cell--brand">
+      <div class="cap-cell__inner">
+        <div class="cap-cell__top">
+          <span class="cap-num">02</span>
+          <span class="cap-count">6 Skills</span>
+        </div>
+        <h3 class="cap-title">Branding</h3>
+        <div class="cap-tags">
+          <span>Brand Identity Design</span>
+          <span>Logo Design</span>
+          <span>Brand Systems</span>
+          <span>Visual Branding</span>
+          <span>Brand Assets</span>
+          <span>Brand Presentation</span>
+        </div>
+      </div>
+      <div class="cap-cell__accent" aria-hidden="true">BR</div>
+    </div>
+
+    <div class="cap-cell cap-cell--uiux">
+      <div class="cap-cell__inner">
+        <div class="cap-cell__top">
+          <span class="cap-num">03</span>
+          <span class="cap-count">8 Skills</span>
+        </div>
+        <h3 class="cap-title">UI/UX &amp;<br>Product</h3>
+        <div class="cap-tags">
+          <span>UI Design</span>
+          <span>UX Thinking</span>
+          <span>Product Design</span>
+          <span>Website Design</span>
+          <span>App Interface Design</span>
+          <span>Wireframing</span>
+          <span>Design Systems</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+      <div class="cap-cell__accent" aria-hidden="true">UX</div>
+    </div>
+
+    <div class="cap-cell cap-cell--motion">
+      <div class="cap-cell__inner">
+        <div class="cap-cell__top">
+          <span class="cap-num">04</span>
+          <span class="cap-count">5 Skills</span>
+        </div>
+        <h3 class="cap-title">Motion &amp;<br>Editing</h3>
+        <div class="cap-tags">
+          <span>Video Editing</span>
+          <span>Motion Graphics</span>
+          <span>Reels &amp; Short-form</span>
+          <span>Intro Animations</span>
+          <span>Visual Effects</span>
+        </div>
+      </div>
+      <div class="cap-cell__accent" aria-hidden="true">MX</div>
+    </div>
+
+  </div>
+
+  <!-- ── DUAL TICKER ── -->
+  <div class="skills-ticker" aria-hidden="true">
+    <div class="st-row st-row--fwd">
+      <div class="st-track">
+        <span>Social Media Design</span><span class="st-sep">·</span>
+        <span>Brand Identity</span><span class="st-sep">·</span>
+        <span>Logo Design</span><span class="st-sep">·</span>
+        <span>UI Design</span><span class="st-sep">·</span>
+        <span>Motion Graphics</span><span class="st-sep">·</span>
+        <span>Campaign Design</span><span class="st-sep">·</span>
+        <span>Figma</span><span class="st-sep">·</span>
+        <span>Adobe Photoshop</span><span class="st-sep">·</span>
+        <span>Creative Direction</span><span class="st-sep">·</span>
+        <span>Packaging Design</span><span class="st-sep">·</span>
+        <span>Video Editing</span><span class="st-sep">·</span>
+        <span>Visual Storytelling</span><span class="st-sep">·</span>
+        <!-- duplicate -->
+        <span>Social Media Design</span><span class="st-sep">·</span>
+        <span>Brand Identity</span><span class="st-sep">·</span>
+        <span>Logo Design</span><span class="st-sep">·</span>
+        <span>UI Design</span><span class="st-sep">·</span>
+        <span>Motion Graphics</span><span class="st-sep">·</span>
+        <span>Campaign Design</span><span class="st-sep">·</span>
+        <span>Figma</span><span class="st-sep">·</span>
+        <span>Adobe Photoshop</span><span class="st-sep">·</span>
+        <span>Creative Direction</span><span class="st-sep">·</span>
+        <span>Packaging Design</span><span class="st-sep">·</span>
+        <span>Video Editing</span><span class="st-sep">·</span>
+        <span>Visual Storytelling</span><span class="st-sep">·</span>
+      </div>
+    </div>
+    <div class="st-row st-row--rev">
+      <div class="st-track">
+        <span>App Interface Design</span><span class="st-sep">·</span>
+        <span>CorelDRAW</span><span class="st-sep">·</span>
+        <span>Brand Systems</span><span class="st-sep">·</span>
+        <span>After Effects</span><span class="st-sep">·</span>
+        <span>Wireframing</span><span class="st-sep">·</span>
+        <span>Event Posters</span><span class="st-sep">·</span>
+        <span>Premiere Pro</span><span class="st-sep">·</span>
+        <span>Ad Creatives</span><span class="st-sep">·</span>
+        <span>Responsive Design</span><span class="st-sep">·</span>
+        <span>Illustrator</span><span class="st-sep">·</span>
+        <span>Brand Presentation</span><span class="st-sep">·</span>
+        <span>Reels Editing</span><span class="st-sep">·</span>
+        <!-- duplicate -->
+        <span>App Interface Design</span><span class="st-sep">·</span>
+        <span>CorelDRAW</span><span class="st-sep">·</span>
+        <span>Brand Systems</span><span class="st-sep">·</span>
+        <span>After Effects</span><span class="st-sep">·</span>
+        <span>Wireframing</span><span class="st-sep">·</span>
+        <span>Event Posters</span><span class="st-sep">·</span>
+        <span>Premiere Pro</span><span class="st-sep">·</span>
+        <span>Ad Creatives</span><span class="st-sep">·</span>
+        <span>Responsive Design</span><span class="st-sep">·</span>
+        <span>Illustrator</span><span class="st-sep">·</span>
+        <span>Brand Presentation</span><span class="st-sep">·</span>
+        <span>Reels Editing</span><span class="st-sep">·</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="about__grid">
+
+    <div>
+      <div class="sec-label rv">About Me</div>
+      <h2 class="about__title rv d1">Design is<br>my language.</h2>
+      <p class="about__p rv d2">
+        I craft visual experiences that bridge culture,
+        commerce, and creativity. From concert tour posters travelling across
+        continents to packaging that sells on shelves — my work lives at the
+        intersection of strategy and aesthetics.
+      </p>
+      <p class="about__p rv d3">
+        With 5+ years of experience across brand identity, event design, packaging,
+        digital campaigns, and UI/UX — I bring both craft and commercial thinking
+        to every brief. Clients in India and Canada across F&amp;B, hospitality,
+        FMCG, music, and tech.
+      </p>
+      <div class="skills rv d4">
+        <span class="skill">Adobe Photoshop</span>
+        <span class="skill">Illustrator</span>
+        <span class="skill">Figma</span>
+        <span class="skill">InDesign</span>
+        <span class="skill">After Effects</span>
+        <span class="skill">Canva Pro</span>
+        <span class="skill">Brand Identity</span>
+        <span class="skill">UI / UX</span>
+        <span class="skill">Print Design</span>
+        <span class="skill">Social Media</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="stats-grid rv d1">
+        <div class="stat-box">
+          <span class="stat-n cnt" data-to="50">50</span><span class="stat-plus">+</span>
+          <span class="stat-l">Projects Delivered</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n cnt" data-to="30">30</span><span class="stat-plus">+</span>
+          <span class="stat-l">Happy Clients</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n cnt" data-to="5">5</span><span class="stat-plus">+</span>
+          <span class="stat-l">Years Experience</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">2</span>
+          <span class="stat-l">Countries Served</span>
+        </div>
+      </div>
+
+      <div class="svc-list rv d2">
+        <div class="svc-item">
+          <span class="svc-num">01</span>
+          <div>
+            <h4>Brand Identity</h4>
+            <p>Logo design, visual systems, brand guidelines</p>
+          </div>
+        </div>
+        <div class="svc-item">
+          <span class="svc-num">02</span>
+          <div>
+            <h4>Event &amp; Print Design</h4>
+            <p>Concert posters, menus, brochures, standees</p>
+          </div>
+        </div>
+        <div class="svc-item">
+          <span class="svc-num">03</span>
+          <div>
+            <h4>Digital &amp; Social Media</h4>
+            <p>Campaigns, banners, stories, reels creatives</p>
+          </div>
+        </div>
+        <div class="svc-item">
+          <span class="svc-num">04</span>
+          <div>
+            <h4>Packaging Design</h4>
+            <p>Product labels, box design, premium mockups</p>
+          </div>
+        </div>
+        <div class="svc-item">
+          <span class="svc-num">05</span>
+          <div>
+            <h4>UI / UX Design</h4>
+            <p>Mobile apps, wireframes, interactive prototypes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__glow" aria-hidden="true"></div>
+    <div class="sec-label rv">Get In Touch</div>
+    <h2 class="contact__title rv d1">
+      Let's Create<br>Something<br>Unforgettable.
+    </h2>
+    <div class="contact__details rv d2">
+      <a href="mailto:bhatiaraghav70@gmail.com" class="contact__email mag-btn">
+        bhatiaraghav70@gmail.com
+        <span class="contact__arrow">↗</span>
+      </a>
+      <a href="tel:+916283783737" class="contact__phone">
+        +91 62837 83737
+      </a>
+    </div>
+    <div class="contact__socials rv d3">
+      <a href="https://www.behance.net/raghavbhatia3" target="_blank" rel="noopener" class="contact__soc">Behance ↗</a>
+      <a href="#" class="contact__soc contact__soc--resume">Resume ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__inner">
+    <span class="foot__logo">RAGHAV<em>.</em></span>
+    <span class="foot__copy">© 2026 All rights reserved.</span>
+    <span class="foot__loc">Creative Designer — India</span>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" aria-modal="true" role="dialog" aria-label="Image viewer">
+  <div class="lb__bg" id="lbBg"></div>
+  <div class="lb__box">
+    <button class="lb__close" id="lbClose" aria-label="Close">✕</button>
+    <div class="lb__img-wrap">
+      <img src="" alt="" id="lbImg" loading="lazy">
+    </div>
+    <div class="lb__cap">
+      <h3 id="lbTitle"></h3>
+      <span id="lbSub"></span>
+    </div>
+  </div>
+  <button class="lb__prev" id="lbPrev" aria-label="Previous">←</button>
+  <button class="lb__next" id="lbNext" aria-label="Next">→</button>
+</div>
+
+<!-- CDN: GSAP + ScrollTrigger + Lenis -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
