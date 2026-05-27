@@ -72,7 +72,7 @@ const PROJECTS = [
   { img: 'WhatsApp Image 2026-05-16 at 12.37.10 PM.webp',      title: 'Digital Creative',     sub: 'Client Social Post',                 cat: 'social'    },
   { img: 'WhatsApp Image 2026-05-16 at 12.37.10 PM (1).webp',  title: 'Digital Creative',     sub: 'Client Social Post',                 cat: 'social'    },
   { img: 'WhatsApp Image 2026-05-16 at 12.37.11 PM.webp',      title: 'Digital Creative',     sub: 'Client Social Post',                 cat: 'social'    },
-  { img: 'WhatsApp Image 2026-05-16 at 12.46.17 PM.webp',      title: 'Digital Creative',     sub: 'Client Social Post',                 cat: 'social'    },
+  { img: 'WhatsApp Image 2026-05-16 at 12.46.17 PM.webp',      title: 'Brand Idenity',     sub: 'Packaging & Merchandise Design',                 cat: 'branding'    },
   { img: 'feelings youtube.webp',                               title: 'YouTube Thumbnail',    sub: 'Digital Content Design',             cat: 'social'    },
   { img: 'masterclass.webp',                                    title: 'Masterclass Creative', sub: 'Digital Campaign',                   cat: 'social'    },
   { img: 'psychology of breeding.webp',                         title: 'Content Creative',     sub: 'Digital Post Design',                cat: 'social'    },
